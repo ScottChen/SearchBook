@@ -7,9 +7,12 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('stage2') {
       steps {
-        timestamps()
+        timestamps() {
+          writeFile(file: 'hello', text: 'hello world', encoding: 'utf-8')
+        }
+
       }
     }
 
