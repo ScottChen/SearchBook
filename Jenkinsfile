@@ -16,5 +16,11 @@ pipeline {
       }
     }
 
+    stage('stage3') {
+      steps {
+        sh 'echo "hello, world"'
+      }
+    }
+
   }
 }
